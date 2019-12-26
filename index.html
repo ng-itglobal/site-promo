@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
+    <link href="./css/sectionHead.css" rel="stylesheet" />
+    <link href="./css/sectionWebApp.css" rel="stylesheet" />
+    <link href="./css/sectionCaseResolved.css" rel="stylesheet" />
+    <link href="./css/sectionTim.css" rel="stylesheet" />
+    <link href="./css/sectionFormSend.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page" id="top">
 
+      <div class="wraperHead"> 
+        <header class="head">
+          <a href="https://itglobal.ru/">
+            <img src="./img/logo/logo.svg" alt="Логотип" class="logo" />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li><a href="#case" class="flowing-scroll">Кейсы</a></li>
+              <li><a href="#project" class="flowing-scroll">Проекты</a></li>
+              <li><a href="#process" class="flowing-scroll">Процесс</a></li>
+              <li><a href="#tim" class="flowing-scroll">Команда</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="description">
+          <div class="tagline">
+            <div class="taglineFirst">Разработка <br/> web-приложений</div>
+            <div  class="taglineSecond">
+              Давно выяснено, что при оценке дизайна и <br/> композиции читаемый текст мешает
+            </div>
+            <button href="#sendForm" type="button" class="btnRequest flowing-scroll"><span class="btnRequestTitle">Оставить заявку</span></button>
+          </div>
+          <a href="#top" class="btnTop flowing-scroll">
+            <div class="btnTopIconWrap">
+              <img src="./img/icon/other/arrow.svg" alt="arrow" class="btnTopIcon"/>
+            </div>
+          </a>
+          <div class="scroll">
+            <img src="./img/icon/other/mouse.svg" alt="scroll icon" class="scrollIcon"/>
+            <div class="scrollInfo">УЗНАТЬ БОЛЬШЕ</div>
+          </div>
+        </section>
+      </div>
+
+      <main>
+        <section class="webApp" id="case">
+          <div class="titleSection">Кейсы, в которых <br/> нужно web-приложение</div>
+          <div class="caseOllWeb">
+            <figure>
+              <img src="./img/icon/cases/process.svg" alt="">
+              <figcaption>Автоматизация процессов</figcaption>
+            </figure>
+            <figure>
+              <img src="./img/icon/cases/communication.svg" alt="">
+              <figcaption>Удобное общение с клиентами</figcaption>
+            </figure>
+            <figure>
+              <img src="./img/icon/cases/sales.svg" alt="">
+              <figcaption>Увеличение продаж</figcaption>
+            </figure>
+            <figure>
+              <img src="./img/icon/cases/workflow.svg" alt="">
+              <figcaption>Организация рабочего процесса</figcaption>
+            </figure>
+            <figure>
+              <img src="./img/icon/cases/ads.svg" alt="">
+              <figcaption>Реклама своегобренда</figcaption>
+            </figure>
+            <figure>
+              <img src="./img/icon/cases/data.svg" alt="">
+              <figcaption>Сбор инормации в одном месте</figcaption>
+            </figure>
+          </div>
+          <button href="#sendForm" type="button" class="btnRequest flowing-scroll"><span class="btnRequestTitle">Оставить заявку</span></button>
+        </section>
+
+        <section class="caseResolved" id="project">
+          <div class="titleSection">Кейсы, которые <br/> мы решали</div>
+          <div class="caseOllResolved">
+            <figure class="caseOneResolved">
+              <img src="./img/icon/projects/mail.svg" alt="mail">
+              <figcaption class="caseResolvedDisriptionTop">Автоматизация обработки клиентских сообщений</figcaption>
+              <figcaption class="caseResolvedDisriptionBottom">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</figcaption>
+            </figure>
+            <figure class="caseOneResolved">
+              <img src="./img/icon/projects/study.svg" alt="study">
+              <figcaption class="caseResolvedDisriptionTop">Организация образовательной платформы</figcaption class="caseResolvedDisriptionTop">
+              <figcaption class="caseResolvedDisriptionBottom">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</figcaption>
+            </figure>
+            <figure class="caseOneResolved">
+              <img src="./img/icon/projects/crypto.svg" alt="crypto">
+              <figcaption class="caseResolvedDisriptionTop">Разработка криптобиржи: от ядра до пользовательского интерфейса</figcaption class="caseResolvedDisriptionTop">
+              <figcaption class="caseResolvedDisriptionBottom">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</figcaption>
+            </figure>
+          </div> 
+        </section>
+
+        <section id="process">
+          <div class="titleSection">Как мы работаем</div>
+        </section>
+
+        <section id="tim">
+          <div class="titleSection">Наша команда</div>
+          <div class="jcarousel-wrapper">
+            <div class="jcarousel" data-jcarousel="true">
+              <ul>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/1.webp" alt="">
+                    <figcaption>должность</figcaption>
+                    <figcaption>сотрудник 0</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/14.webp" alt=""> 
+                    <figcaption>должность</figcaption>
+                    <figcaption>сотрудник 1</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/15.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 2</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/21.webp" alt=""> 
+                    <figcaption>должность</figcaption>
+                    <figcaption>сотрудник 3</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/24.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 4</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/38.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 5</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/42.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 6</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/46.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 7</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/3.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 8</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/4.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 9</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/28.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 10</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/31.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 11</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/33.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 12</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/36.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 13</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/40.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 14</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/44.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 15</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/48.webp" alt="">
+                    <figcaption>должность</figcaption> 
+                    <figcaption>сотрудник 16</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+            <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+          </div>
+          
+        </section>
+
+        <section class="sectionFormSend" id="sendForm">
+          <div class="titleSection">Оставьте заявку</div>
+          <form action="mailto:kolya-mp19@mail.ru" enctype="text/plain" name="request" class="formSend">
+
+            <div class="formGroup">
+              <label for="name">имя</label>
+              <input id="name" type="text" class="formInput" placeholder="Как к вам обращаться?">
+            </div>
+
+            <div class="formGroup">
+              <label for="mail">e-mail</label>
+              <input id="mail" type="email" class="formInput" placeholder="Укажите контактный e-mail">
+            </div>
+
+            <div class="formGroup">
+              <label for="phone">телефон</label>
+              <input id="phone" type="number" class="formInput" placeholder="Укажите контактный телефон">
+            </div>
+
+            <div class="formGroup formGroupContact">
+              <label for="contact">как лучше связаться?</label>
+              <div class="formGroupContactCheckbox">
+                <input class="ContactCheckbox" type="checkbox" id="contact"><p>По телефону</p>
+                <input class="ContactCheckbox" type="checkbox" id="contact"><p>По почте</p>
+              </div>
+            </div>
+
+            <div class="formGroup">
+              <label for="comments">комментарии</label>
+              <textarea class="formInput formGroupText" id="comments" placeholder="Опишите Ваш проект или идею"></textarea>
+            </div>
+
+            <div class="formGroup">
+              <p>Нажимая на кнопку Оставить заявку, я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности.</p>
+            </div>
+
+            <button type="submit" class="btnRequest" form="request"><span class="btnRequestTitle">Оставить заявку</span></button>
+          </form>
+        </section>
+
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

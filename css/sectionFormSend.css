@@ -1,0 +1,83 @@
+/* форма заявки */
+.sectionFormSend {
+  text-align: left;
+  margin-bottom: 250px;
+}
+.formSend {
+  max-width: 770px;
+  padding: 50px 100px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+.formGroup {
+  margin: 12px 0 32px 0;
+}
+.formGroup label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+}
+.formInput {
+  font-family: "Roboto", sans-serif;
+  margin-top: 12px;
+  font-size: 1.125rem;
+  line-height: 21px;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 3px;
+}
+.formInput:invalid {
+  border: 2px solid #510A0A;
+  border-radius: 3px;
+  box-shadow: 0px 4px 50px rgba(255, 0, 0, 0.25);
+}
+.formGroupContact p {
+  text-align: center;
+}
+.formGroupContactCheckbox {
+  display: flex;
+  flex-direction: row;
+}
+.formGroupContactCheckbox p {
+  font-family: "Roboto", sans-serif;
+  margin-right: 32px;
+  font-size: 1.125rem;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.ContactCheckbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  margin: auto 12px auto 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+}
+.ContactCheckbox:checked::before {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+  color: #f7941d;
+}
+.formGroupText {
+  height: 168px;
+}
+/* форма заявки */

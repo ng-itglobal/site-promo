@@ -1,0 +1,31 @@
+/* Кейсы, в которых нужно web-приложение */
+.webApp {
+  text-align: center;
+}
+.titleSection {
+  margin-top: 70px;
+  margin-bottom: 75px;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.caseOllWeb {
+  margin-bottom: 85px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 60px;
+}
+.caseOllWeb figcaption {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.21px;
+}
+/* Кейсы, в которых нужно web-приложение */

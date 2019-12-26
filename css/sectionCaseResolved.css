@@ -1,0 +1,30 @@
+/* Кейсы, которые мы решали */
+.caseOllResolved {
+  margin-bottom: 85px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+.caseOneResolved {
+  margin: 0;
+  padding: 60px 30px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.caseResolvedDisriptionTop {
+  margin: 40px 0 16px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 32px;
+  letter-spacing: 0.21px;
+}
+.caseResolvedDisriptionBottom {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* Кейсы, которые мы решали */

@@ -1,0 +1,97 @@
+/* первая страница */
+.wraperHead {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.menu li {
+  display: inline;
+  margin-right: 40px;
+}
+.menu li:last-child {
+  margin-right: 0px;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+.taglineFirst {
+  height: 150px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 75px;
+  color: #ffffff;
+}
+.taglineSecond {
+  margin-bottom: 30px;
+  font-size: 1.125rem;
+  line-height: 28px;
+  opacity: 0.5;
+}
+.tagline {
+  margin-bottom: 150px;
+}
+.btnRequest {
+  width: 240px;
+  background-color: #f7941d;
+  color: #ffffff;
+  border: none;
+  border-radius: 32px;
+  outline: none;
+  cursor: pointer;
+}
+.btnRequest:hover {
+  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+}
+.btnRequest:active {
+  background: #ce7c1a;
+  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+}
+.btnRequestTitle {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.288px;
+}
+.btnTop {
+  position: fixed;
+  right: 150px;
+  bottom: 100px;
+  z-index: 9999;
+  cursor: pointer;
+  display: none;
+}
+.btnTopIconWrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f7941d;
+  text-align: center;
+}
+.btnTopIcon {
+  margin: 20px;
+}
+.scroll {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  opacity: 0.5;
+}
+.scrollIcon {
+  padding-right: 10px;
+}
+.scrollInfo {
+  letter-spacing: 2px;
+}
+/* первая страница */
