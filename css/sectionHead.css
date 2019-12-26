@@ -6,10 +6,10 @@
   justify-content: space-between;
 }
 .head {
+  margin: 30px 20px 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
 }
 .menu li {
   display: inline;

@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/sectionHead.css" rel="stylesheet" />
     <link href="./css/sectionWebApp.css" rel="stylesheet" />
     <link href="./css/sectionCaseResolved.css" rel="stylesheet" />
     <link href="./css/sectionTim.css" rel="stylesheet" />
     <link href="./css/sectionFormSend.css" rel="stylesheet" />
     <link href="./css/sectionProcess.css" rel="stylesheet" />
+    <link href="./css/modal.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"></script>
     <title>Document</title>
@@ -332,12 +333,24 @@
               <p>Нажимая на кнопку Оставить заявку, я даю согласие на обработку своих персональных данных и соглашаюсь c политикой конфиденциальности.</p>
             </div>
 
-            <button type="submit" class="btnRequest" form="request"><span class="btnRequestTitle">Оставить заявку</span></button>
+            <button type="submit" class="btnRequest modalBtn" form="request"><span class="btnRequestTitle">Оставить заявку</span></button>
           </form>
         </section>
 
       </main>
+
     </div>
-    <script src="index.js"></script>
+    
+    <div class="modal" id="modal">
+      <div class="closeModal">X</div>
+      <div class="contentModal">
+        
+      </div>
+    </div>
+
+    <script src="./js/carousel.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>

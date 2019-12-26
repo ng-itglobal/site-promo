@@ -6,13 +6,13 @@
 .fotoCarousel {
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 /** Carousel **/
 
 .jcarousel {
   position: relative;
   overflow: hidden;
-  width: 100%;
 }
 .jcarousel ul {
   width: 10000em;
@@ -50,9 +50,9 @@
   box-shadow: 0 0 4px #f0efe7;
 }
 .jcarousel-control-prev {
-  left: 15px;
+  left: 0px;
 }
 .jcarousel-control-next {
-  right: 15px;
+  right: 0px;
 }
 /* карусель сотрудников */

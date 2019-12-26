@@ -7,7 +7,9 @@
   justify-content: center;
 }
 .caseOneResolved {
+  margin: 0 ;
   max-width: 310px;
+  margin-top: 30px;
   padding: 60px 30px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.05);
@@ -25,5 +27,9 @@
   font-size: 1rem;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.7);
+}
+.caseOneResolved:nth-child(2) {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 /* Кейсы, которые мы решали */

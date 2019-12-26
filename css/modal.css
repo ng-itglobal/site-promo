@@ -1,0 +1,18 @@
+.modal {
+  display: flex;
+  flex-direction: row;
+  width: 608px;
+  height: 650px;
+  position: fixed;
+  display: none; 
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0);
+}
+.contentModal {
+  width: 560px;
+  height: 600px;
+  background: rgba(255, 255, 255, 1);
+}
+.closeModal {
+  align-content: flex-end;
+}
