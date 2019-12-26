@@ -14,13 +14,12 @@
 .caseOllWeb {
   margin-bottom: 85px;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .caseOllWeb figcaption {
+  width: 320px;
   margin-top: 40px;
   font-weight: bold;
   font-size: 1.5rem;

@@ -12,6 +12,12 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .page {
+    padding: 0 50px;
+  }
+  
+}
 
 
 

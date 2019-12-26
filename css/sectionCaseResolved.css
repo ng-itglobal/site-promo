@@ -2,14 +2,14 @@
 .caseOllResolved {
   margin-bottom: 85px;
   text-align: left;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.caseOllResolved:nth-child(1) {
 }
 .caseOneResolved {
-  margin: 0;
+  max-width: 310px;
   padding: 60px 30px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.05);

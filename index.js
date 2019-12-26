@@ -10,6 +10,20 @@
       }
     });
 
+    $(".flowing-scroll").on("click", function() {
+      let el = $(this);
+      let dest = el.attr("href");
+      if (dest !== undefined && dest !== "") {
+        $("html").animate(
+          {
+            scrollTop: $(dest).offset().top
+          },
+          500 // скорость прокрутки
+        );
+      }
+      return false;
+    });
+
     let jcarousel = $(".jcarousel");
 
     jcarousel
@@ -39,19 +53,5 @@
     $(".jcarousel-control-next").jcarouselControl({
       target: "+=1"
     });
-  });
-
-  $(".flowing-scroll").on("click", function() {
-    let el = $(this);
-    let dest = el.attr("href");
-    if (dest !== undefined && dest !== "") {
-      $("html").animate(
-        {
-          scrollTop: $(dest).offset().top
-        },
-        500 // скорость прокрутки
-      );
-    }
-    return false;
   });
 })(jQuery);
