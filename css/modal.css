@@ -4,7 +4,7 @@
   width: 608px;
   height: 650px;
   position: fixed;
-  display: none; 
+  display: none;
   z-index: 9999;
   background: rgba(0, 0, 0, 0);
 }
@@ -12,7 +12,52 @@
   width: 560px;
   height: 600px;
   background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.closeModal {
-  align-content: flex-end;
+.closeModalContent {
+  text-align: right;
+}
+.contentModalImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  clip-path: circle(50% at 50% 50%);
+}
+.closeModalIcon {
+  cursor: pointer;
+}
+.contentModalTitle {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+.contentModalSlogon {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(17, 17, 17, 0.66);
+}
+.contentModalName {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 28px;
+  text-align: center;
+  color: #111111;
+}
+.contentModalPosition {
+  font-size: 1.125rem;
+  line-height: 24px;
+  text-align: center;
+  color: #8f959f;
+}
+.closeModalBtn {
+  margin: 32px auto;
 }

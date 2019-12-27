@@ -62,7 +62,7 @@
   position: fixed;
   right: 150px;
   bottom: 100px;
-  z-index: 9999;
+  z-index: 1;
   cursor: pointer;
   display: none;
 }
