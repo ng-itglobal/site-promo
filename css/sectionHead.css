@@ -88,4 +88,37 @@
 .scrollInfo {
   letter-spacing: 2px;
 }
+.headMob {
+  display: none;
+}
 /* первая страница */
+
+
+
+@media (max-width: 768px) {
+  .head {
+    visibility: hidden;
+  }
+  .headMob {
+    display: block;
+  }
+  .scroll {
+    display: none;
+  }
+  .btnTop {
+    right: 30px;
+  }
+}
+
+@media (max-width: 552px) {
+  .taglineFirst {
+    font-size: 2.25rem;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btnTop {
+    right: 10px;
+  }
+}

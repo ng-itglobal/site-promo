@@ -1,17 +1,18 @@
-.mobile-container {
-  z-index: 9999;
-  width: 300px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
+.headMob {
+  position: absolute;
+  width: 100%;
+  margin: 0 -20px;
 }
-
 .topnav {
   overflow: hidden;
-  background-color: #333;
-  position: relative;
+  height: 100%;
+}
+
+.headMobLinks {
+  display: none;
+  height: 100%;
+  background-color: #111111;
+  text-align: center;
 }
 
 .topnav #myLinks {
@@ -27,19 +28,31 @@
 }
 
 .topnav a.icon {
-  background: black;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+
+
+/* iconMenu */
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-.active {
-  background-color: #4CAF50;
-  color: white;
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }

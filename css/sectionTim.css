@@ -4,9 +4,10 @@
   position: relative;
 }
 .fotoCarousel {
+  max-width: 340px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 0 auto;
 }
 /** Carousel **/
 
@@ -55,4 +56,20 @@
 .jcarousel-control-next {
   right: 0px;
 }
+.timCrouselPagination {
+  display: none;
+}
 /* карусель сотрудников */
+
+@media (max-width: 768px) {
+  .timCrouselPagination {
+    display: flex;
+    justify-content: center;
+  }
+  .jcarousel-control-prev {
+    display: none;
+  }
+  .jcarousel-control-next {
+    display: none;
+  }
+}

@@ -1,11 +1,12 @@
 .modal {
-  display: flex;
-  flex-direction: row;
   width: 608px;
   height: 650px;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: row;
   position: fixed;
   display: none;
-  z-index: 9999;
+  z-index: 10;
   background: rgba(0, 0, 0, 0);
 }
 .contentModal {
@@ -41,7 +42,7 @@
 .contentModalSlogon {
   margin-bottom: 32px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 28px;
   color: rgba(17, 17, 17, 0.66);
 }
@@ -60,4 +61,22 @@
 }
 .closeModalBtn {
   margin: 32px auto;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+  .contentModal {
+    width: 360px;
+  }
+}
+
+@media (max-width: 425px) {
+  .modal {
+    width: 350px;
+  }
+  .contentModal {
+    width: 300px;
+  }
 }

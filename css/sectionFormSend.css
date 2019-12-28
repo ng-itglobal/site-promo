@@ -11,6 +11,8 @@
   border-radius: 3px;
 }
 .formGroup {
+  display: flex;
+  flex-direction: column;
   margin: 12px 0 32px 0;
 }
 .formGroup label {
@@ -81,3 +83,13 @@
   height: 168px;
 }
 /* форма заявки */
+
+@media (max-width: 768px) {
+  .formSend {
+    padding: 10px 10px;
+  }
+  .formInput {
+    width: 90%;
+    padding: 15px 0 15px 15px;
+  }
+}

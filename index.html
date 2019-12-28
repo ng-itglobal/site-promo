@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,28 +36,28 @@
           </nav>
         </header>
         
-        
-        <!-- <header class="head">
-          <div class="mobile-container">
-            <div class="topnav">
+        <header class="headMob">
+          <div class="topnav">
+            <div>
               <a href="https://itglobal.ru/">
                 <img src="./img/logo/logo.svg" alt="Логотип" class="logo" />
               </a>
-              <div id="myLinks">
-                <a href="#case">Задачи</a>
-                <a href="#project">Проекты</a>
-                <a href="#process">Процесс</a>
-                <a href="#tim">Команда</a>
-              </div>
-              <a href="#" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
             </div>
-          </div>          
-        </header> -->
-
-
-
+            <div id="myLinks" class="headMobLinks">
+              <a href="#case" class="flowing-scroll headMobLink">Задачи</a>
+              <a href="#project" class="flowing-scroll headMobLink">Проекты</a>
+              <a href="#process" class="flowing-scroll headMobLink">Процесс</a>
+              <a href="#tim" class="flowing-scroll headMobLink">Команда</a>
+            </div>
+            <a href="#" class="icon" onclick="actionBurgMenu()">
+                <div class="containerIconBurger" onclick="actionIconBurgMenu(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </a>
+          </div>                 
+        </header>
 
         <section class="description">
           <div class="tagline">
@@ -108,6 +108,51 @@
               <figcaption>Сбор инормации</figcaption>
             </figure>
           </div>
+
+          <div class="caseOllWeb caseOllWebMob jcarousel-wrapper">
+            <div class="jcarousel" data-jcarousel="true">
+              <ul>
+                <li>
+                  <figure class="caseOllWebMobFigure">
+                    <img src="./img/icon/cases/process.svg" alt="">
+                    <figcaption>Автоматизация процессов</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="caseOllWebMobFigure">
+                    <img src="./img/icon/cases/communication.svg" alt="">
+                    <figcaption>Общение с клиентами</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="caseOllWebMobFigure">
+                    <img src="./img/icon/cases/sales.svg" alt="">
+                    <figcaption>Ведение статистики</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="caseOllWebMobFigure">
+                    <img src="./img/icon/cases/workflow.svg" alt="">
+                    <figcaption>Организация рабочего процесса</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="caseOllWebMobFigure">
+                    <img src="./img/icon/cases/ads.svg" alt="">
+                    <figcaption>Реклама своего бренда</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="caseOllWebMobFigure">
+                    <img src="./img/icon/cases/data.svg" alt="">
+                    <figcaption>Сбор инормации</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
+          </div>
+
           <button href="#sendForm" type="button" class="btnRequest flowing-scroll"><span class="btnRequestTitle">Оставить заявку</span></button>
         </section>
 
@@ -135,6 +180,42 @@
               <figcaption class="caseResolvedDisriptionBottom">— создали систему управления обеспечением клиентских заявок</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— обеспечили обработку до 2000 клиентских транзакций в секунду</figcaption>
             </figure>
+          </div> 
+
+
+          <div class="caseOllResolved caseOllResolvedMob jcarousel-wrapper">
+            <div class="jcarousel" data-jcarousel="true">
+              <ul>
+                <li>
+                  <figure class="caseOneResolved caseOneResolvedMob">
+                    <img src="./img/icon/projects/mail.svg" alt="mail">
+                    <figcaption class="caseResolvedDisriptionTop">Автоматизация обработки клиентских сообщений</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— создали систему отчетности по внебиржевым сделкам</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— обеспечили прием и обработку различных клиентских сообщений</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— реализовали формирование выписок и отчетов, а также статистики</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="caseOneResolved caseOneResolvedMob">
+                    <img src="./img/icon/projects/study.svg" alt="study">
+                    <figcaption class="caseResolvedDisriptionTop">Организация образовательной платформы</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— запустили платформу для обучения финансовой грамотности</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— реализовали рабочее пространство для пользователей и преподавателей</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— интегрировали на платформу сервисы финансовой аналитики</figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="caseOneResolved caseOneResolvedMob">
+                    <img src="./img/icon/projects/crypto.svg" alt="crypto">
+                    <figcaption class="caseResolvedDisriptionTop">Разработка криптобиржи: от ядра до пользовательского интерфейса</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— реализовали полнофункциональный торговый веб-терминал</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— создали систему управления обеспечением клиентских заявок</figcaption>
+                    <figcaption class="caseResolvedDisriptionBottom">— обеспечили обработку до 2000 клиентских транзакций в секунду</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
           </div> 
         </section>
 
@@ -187,6 +268,68 @@
                 </div>
               </figure>
             </div>
+          </div>
+
+          <div class="jcarousel-wrapper roadMapMob">
+            <div class="jcarousel" data-jcarousel="true">
+              <ul>
+                <li>
+                  <figure class="roadMapStep">
+                    <div class="roadMapInfoMob">
+                      <img class="roadMapImg" src="./img/icon/timelime/collect.svg" alt="">
+                      <figcaption class="roadMapDiscrTop">Сбор и оформление требований</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Изучаем идею, пишем техническое задание и готовим договор.</figcaption>
+                    </div>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="roadMapStep">
+                    <div class="roadMapInfoMob">
+                      <img src="./img/icon/timelime/design.svg" alt="">
+                      <figcaption class="roadMapDiscrTop">Проектирование и разработка</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Продумываем архитектуру проекта, реализуем серверную и клиентскую часть.</figcaption>
+                    </div>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="roadMapStep">
+                    <div class="roadMapInfoMob">
+                      <img src="./img/icon/timelime/test.svg" alt="">
+                      <figcaption class="roadMapDiscrTop">Тестирование</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Для полного соответствия ТЗ проводим полный комплекс тестирования для проекта, при необходимости пишем автотесты.</figcaption>
+                    </div>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="roadMapStep">
+                    <div class="roadMapInfoMob">
+                      <img src="./img/icon/timelime/docs.svg" alt="">
+                      <figcaption class="roadMapDiscrTop">Составление документации</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Готовим техническую и пользовательскую документацию.</figcaption>
+                    </div>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="roadMapStep">
+                    <div class="roadMapInfoMob">
+                      <img src="./img/icon/timelime/act.svg" alt="">
+                      <figcaption class="roadMapDiscrTop">Сдача и приёмка работ</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Проводим демонстрацию готового проекта, подписываем необходимые документы.</figcaption>
+                    </div>
+                  </figure>
+                </li>
+                <li>
+                  <figure class="roadMapStep">
+                    <div class="roadMapInfoMob">
+                      <img src="./img/icon/timelime/start.svg" alt="">
+                      <figcaption class="roadMapDiscrTop">Запуск готового проекта</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Обеспечиваем гарантированную техническую поддержку для уже запущенного проекта.</figcaption>
+                    </div>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <p class="jcarousel-pagination roadMapPagination" data-jcarouselpagination="true"></p>
           </div>
         </section>
 
@@ -318,6 +461,7 @@
             </div>
             <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
             <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+            <p class="jcarousel-pagination timCrouselPagination" data-jcarouselpagination="true"></p>
           </div>
         </section>
 
@@ -360,9 +504,7 @@
             <button type="submit" class="btnRequest modalBtn" form="request"><span class="btnRequestTitle">Оставить заявку</span></button>
           </form>
         </section>
-
       </main>
-
     </div>
     
     <div class="modal" id="modal">
@@ -376,6 +518,7 @@
         <button class="btnRequest closeModal closeModalBtn"><span class="btnRequestTitle">ОК, буду ждать!</span></button>
       </div>
     </div>
+
     <script src="./js/carousel.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/modal.js"></script>

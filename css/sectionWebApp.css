@@ -27,4 +27,53 @@
   text-align: center;
   letter-spacing: 0.21px;
 }
+.caseOllWebMob {
+  display: none;
+}
+
+.caseOllWebMobFigure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  margin: 0 auto;
+}
+.caseOllWebMobFigure img {
+  max-width: 147px;;
+}
+.caseOllWebMobFigure figcaption {
+  font-size: 32px;
+  line-height: 40px;
+}
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  border-radius: 10px;
+  margin-right: 7px;
+  text-indent: -9999px;
+  background: #4C4C4C;
+}
+.jcarousel-pagination a.active {
+  background: #F79D31;
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 0 2px #F0EFE7;
+}
+
 /* Кейсы, в которых нужно web-приложение */
+
+@media (max-width: 768px) {
+  .titleSection {
+    font-size: 2.5rem;
+  }
+  .caseOllWeb {
+    display: none;
+  }
+  .caseOllWebMob {
+    display: flex;
+  }
+}
