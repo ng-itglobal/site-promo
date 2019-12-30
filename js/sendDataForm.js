@@ -2,8 +2,8 @@
   var $form = $("#sent-request-form");
 
   function IsValidPhone(phone) {
-    var r = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
-    return r.test(phone);
+    var pattern = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+    return pattern.test(phone);
   }
 
   function isValidEmailAddress(emailAddress) {
@@ -12,36 +12,39 @@
   }
 
   var validateForm = function() {
-    $form.find(".is-invalid").removeClass("is-invalid");
-    $form.find(".invalid-feedback").addClass("hide");
+    $form.find(".formInputInvalid").removeClass("formInputInvalid");
     var result = true;
 
     var $phone = $("#sentRequestPhone");
     if (!IsValidPhone($phone.val())) {
-      $phone.addClass("is-invalid");
-      $phone.siblings(".invalid-feedback").removeClass("hide");
+      $phone.addClass("formInputInvalid");
       result = false;
+    } else {
+        $phone.removeClass("formInputInvalid")
     }
 
     var $email = $("#sentRequestEmail");
     if (!isValidEmailAddress($email.val())) {
-      $email.addClass("is-invalid");
-      $email.siblings(".invalid-feedback").removeClass("hide");
+      $email.addClass("formInputInvalid");
       result = false;
+    } else {
+        $email.removeClass("formInputInvalid")
     }
 
     var $msg = $("#sentRequestMsg");
     if (!($msg.val() && $msg.val().length > 0)) {
-      $msg.addClass("is-invalid");
-      $msg.siblings(".invalid-feedback").removeClass("hide");
+      $msg.addClass("formInputInvalid");
       result = false;
+    } else {
+        $msg.removeClass("formInputInvalid")
     }
 
     var $name = $("#sentRequestName");
     if (!($name.val() && $name.val().length > 0)) {
-      $name.addClass("is-invalid");
-      $name.siblings(".invalid-feedback").removeClass("hide");
+      $name.addClass("formInputInvalid");
       result = false;
+    } else {
+        $name.removeClass("formInputInvalid")
     }
 
     return result;
@@ -51,6 +54,33 @@
     $(".result-msg").remove();
 
     if (validateForm()) {
+                    // модальное окно - переместить в if (b && b.status === 200)
+                    $(".modalBtn").click(function(e) {
+                        e.preventDefault();
+                        let id = $(".modal");
+            
+                        let winH = $(window).height();
+                        let winW = $(window).width();
+            
+                        id.css("top", winH / 2 - id.height() / 2);
+                        id.css("left", winW / 2 - id.width() / 2);
+            
+                        id.fadeIn();
+            
+                        $("input").prop("disabled", true);
+                        $("textarea").prop("disabled", true);
+                        $(".page").fadeTo(500, 0.5);
+                      });
+            
+                      $(".closeModal").click(function(e) {
+                        e.preventDefault();
+                        $(".modal").fadeOut();
+                        $("input").prop("disabled", false);
+                        $("textarea").prop("disabled", false);
+                        $(".page").fadeTo(500, 1);
+                        });
+                        // модальное окно
+
       $form.submit();
     }
 
@@ -82,20 +112,18 @@
     })
       .done(function(r, a, b) {
         if (b && b.status === 200) {
-          $button.before(
-            '<p class="result-msg alert alert-info" role="alert">Заявка успешно отправлена, скоро мы с вами свяжемся.</p>'
-          );
+
           $form[0].reset();
         } else {
           if (r.error) {
             $button.before(
               '<p class="result-msg alert alert-danger" role="alert">Произошла ошибка: "' +
                 r.error +
-                '" — попробуйте связаться с нами через страницу "Контакты".</p>'
+                '" — попробуйте связаться с нами через страницу https://itglobal.ru.</p>'
             );
           } else {
             $button.before(
-              '<p class="result-msg alert alert-danger" role="alert">Произошла ошибка, попробуйте связаться с нами через страницу "Контакты".</p>'
+              '<p class="result-msg alert alert-danger" role="alert">Произошла ошибка, попробуйте связаться с нами через страницу https://itglobal.ru.</p>'
             );
           }
           console.log(r, a, b);
@@ -117,4 +145,7 @@
 
     e.preventDefault();
   });
+
+
+  
 })(jQuery);

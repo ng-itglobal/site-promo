@@ -33,7 +33,7 @@
   border: none;
   border-radius: 3px;
 }
-.formInput:invalid {
+.formInputInvalid {
   border: 2px solid #510A0A;
   border-radius: 3px;
   box-shadow: 0px 4px 50px rgba(255, 0, 0, 0.25);
@@ -82,6 +82,7 @@
 .formGroupText {
   height: 168px;
 }
+
 /* форма заявки */
 
 @media (max-width: 768px) {
