@@ -16,11 +16,13 @@
   overflow: hidden;
 }
 .jcarousel ul {
+  height: 100%;
   width: 10000em;
   position: relative;
   list-style: none;
 }
 .jcarousel li {
+  height: 100%;
   float: left;
 }
 .jcarousel img {

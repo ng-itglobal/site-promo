@@ -36,7 +36,11 @@
   display: none;
 }
 .caseOneResolvedMob {
+  height: 100%;
   margin: 0 auto;
+}
+.caseOneResolvedMobImg {
+  max-width: 104px;
 }
 .jcarousel-pagination a {
   text-decoration: none;

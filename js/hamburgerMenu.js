@@ -1,5 +1,4 @@
 (function($) {
-  
   $(".containerIconBurger").click(function() {
     if (parseInt($(".headMob").css("height")) === $(window).height()) {
       $(".headMob").css("height", "auto");
@@ -7,7 +6,7 @@
       $(".headMob").css("height", "100vh");
     }
   });
-  
+
   $(".headMobLink").click(function() {
     $(".containerIconBurger").click();
     $(".headMobLinks").css("display", "none");
