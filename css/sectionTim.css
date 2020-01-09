@@ -9,6 +9,18 @@
   flex-direction: column;
   margin: 0 auto;
 }
+.timCarouselDiscrTop {
+  margin: 24px 0 7px 0; 
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 28px;
+}
+.timCarouselDiscrBottom {
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 24px;
+  color: #8F959F;
+}
 /** Carousel **/
 
 .jcarousel {
