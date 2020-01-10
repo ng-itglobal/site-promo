@@ -1,7 +1,8 @@
 /* форма заявки */
 .sectionFormSend {
-  text-align: left;
+  margin-top: 96px;
   margin-bottom: 250px;
+  text-align: left;
 }
 .formSend {
   max-width: 770px;

@@ -1,10 +1,10 @@
 /* Кейсы, в которых нужно web-приложение */
 .webApp {
+  margin-top: 96px;
   text-align: center;
 }
 .titleSection {
-  margin-top: 70px;
-  margin-bottom: 75px;
+  margin-bottom: 64px;
   font-weight: bold;
   font-size: 3rem;
   line-height: 64px;
@@ -16,11 +16,11 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .caseOllWeb figcaption {
   width: 320px;
-  margin-top: 40px;
+  margin: 40px 0;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 32px;

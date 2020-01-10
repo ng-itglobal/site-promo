@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/sectionHead.css" rel="stylesheet" />
     <link href="./css/sectionWebApp.css" rel="stylesheet" />
@@ -24,17 +24,19 @@
 
       <div class="wraperHead"> 
         <header class="head">
-          <a href="https://itglobal.ru/">
-            <img src="./img/logo/logo.svg" alt="Логотип" class="logo" />
-          </a>
-          <nav class="menu">
-            <ul>
-              <li><a href="#case" class="flowing-scroll">Задачи</a></li>
-              <li><a href="#project" class="flowing-scroll">Проекты</a></li>
-              <li><a href="#process" class="flowing-scroll">Процесс</a></li>
-              <li><a href="#tim" class="flowing-scroll">Команда</a></li>
-            </ul>
-          </nav>
+          <div class="wrapHeadFixed">
+            <a href="https://itglobal.ru/" target="_blank">
+              <img src="./img/logo/logo.svg" alt="Логотип" class="logo" />
+            </a>
+            <nav class="menu">
+              <ul>
+                <li><a href="#case" class="flowing-scroll">Задачи</a></li>
+                <li><a href="#project" class="flowing-scroll">Проекты</a></li>
+                <li><a href="#process" class="flowing-scroll">Процесс</a></li>
+                <li><a href="#tim" class="flowing-scroll">Команда</a></li>
+              </ul>
+            </nav>
+          </div>
         </header>
         
         <header class="headMob">
@@ -65,6 +67,7 @@
             <div class="taglineFirst">
               <div>Разработка</div>
               <div>web-приложений</div>
+              <div class="taglineFirstSub">АйТи Глобал - профессиональный разработчик программного обеспечения. С 2010 года мы создали более 15 разнообразных проектов: от небольших утилит до сложных информационных систем управления и контроля бизнес-процессов</div>
             </div>
             <button href="#sendForm" type="button" class="btnRequest flowing-scroll"><span class="btnRequestTitle">Оставить заявку</span></button>
           </div>
@@ -75,38 +78,38 @@
           </a>
           <div class="scroll">
             <img src="./img/icon/other/mouse.svg" alt="scroll icon" class="scrollIcon"/>
-            <div class="scrollInfo">УЗНАТЬ БОЛЬШЕ</div>
+            <div class="scrollInfo"><a href="#case" class="flowing-scroll scrollInfoLink">УЗНАТЬ БОЛЬШЕ</a></div>
           </div>
         </section>
       </div>
 
-      <main>
+      <main class="main">
         <section class="webApp" id="case">
-          <div class="titleSection">Веб-приложение <br/> поможет решить задачи</div>
+          <div class="titleSection">Web-приложение <br/> поможет решить задачи</div>
           <div class="caseOllWeb">
             <figure>
               <img src="./img/icon/cases/process.svg" alt="">
-              <figcaption>Автоматизация процессов</figcaption>
+              <figcaption>Автоматизация <br/> процессов</figcaption>
             </figure>
             <figure>
               <img src="./img/icon/cases/communication.svg" alt="">
-              <figcaption>Общение с клиентами</figcaption>
+              <figcaption>Общение <br/> с клиентами</figcaption>
             </figure>
             <figure>
               <img src="./img/icon/cases/sales.svg" alt="">
-              <figcaption>Ведение статистики</figcaption>
+              <figcaption>Ведение <br/> статистики</figcaption>
             </figure>
             <figure>
               <img src="./img/icon/cases/workflow.svg" alt="">
-              <figcaption>Организация рабочего процесса</figcaption>
+              <figcaption>Организация <br/> рабочего процесса</figcaption>
             </figure>
             <figure>
               <img src="./img/icon/cases/ads.svg" alt="">
-              <figcaption>Реклама своего бренда</figcaption>
+              <figcaption>Реклама <br/> своего бренда</figcaption>
             </figure>
             <figure>
               <img src="./img/icon/cases/data.svg" alt="">
-              <figcaption>Сбор инормации</figcaption>
+              <figcaption>Сбор <br/> информации</figcaption>
             </figure>
           </div>
 
@@ -116,37 +119,37 @@
                 <li>
                   <figure class="caseOllWebMobFigure">
                     <img src="./img/icon/cases/process.svg" alt="">
-                    <figcaption>Автоматизация процессов</figcaption>
+                    <figcaption>Автоматизация <br/> процессов</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure class="caseOllWebMobFigure">
                     <img src="./img/icon/cases/communication.svg" alt="">
-                    <figcaption>Общение с клиентами</figcaption>
+                    <figcaption>Общение <br/> с клиентами</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure class="caseOllWebMobFigure">
                     <img src="./img/icon/cases/sales.svg" alt="">
-                    <figcaption>Ведение статистики</figcaption>
+                    <figcaption>Ведение <br/> статистики</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure class="caseOllWebMobFigure">
                     <img src="./img/icon/cases/workflow.svg" alt="">
-                    <figcaption>Организация рабочего процесса</figcaption>
+                    <figcaption>Организация <br/> рабочего процесса</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure class="caseOllWebMobFigure">
                     <img src="./img/icon/cases/ads.svg" alt="">
-                    <figcaption>Реклама своего бренда</figcaption>
+                    <figcaption>Реклама <br/> вашего бренда</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure class="caseOllWebMobFigure">
                     <img src="./img/icon/cases/data.svg" alt="">
-                    <figcaption>Сбор инормации</figcaption>
+                    <figcaption>Сбор <br/> информации</figcaption>
                   </figure>
                 </li>
               </ul>
@@ -162,21 +165,21 @@
           <div class="caseOllResolved">
             <figure class="caseOneResolved">
               <img src="./img/icon/projects/mail.svg" alt="mail">
-              <figcaption class="caseResolvedDisriptionTop">Автоматизация обработки клиентских сообщений</figcaption>
+              <figcaption class="caseResolvedDisriptionTop">Автоматизация <br/> обработки клиентских <br/> сообщений</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— создали систему отчетности по внебиржевым сделкам</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— обеспечили прием и обработку различных клиентских сообщений</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— реализовали формирование выписок и отчетов, а также статистики</figcaption>
             </figure>
             <figure class="caseOneResolved">
               <img src="./img/icon/projects/study.svg" alt="study">
-              <figcaption class="caseResolvedDisriptionTop">Организация образовательной платформы</figcaption>
+              <figcaption class="caseResolvedDisriptionTop">Организация <br/> образовательной <br/> платформы</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— запустили платформу для обучения финансовой грамотности</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— реализовали рабочее пространство для пользователей и преподавателей</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— интегрировали на платформу сервисы финансовой аналитики</figcaption>
             </figure>
             <figure class="caseOneResolved">
               <img src="./img/icon/projects/crypto.svg" alt="crypto">
-              <figcaption class="caseResolvedDisriptionTop">Разработка криптобиржи: от ядра до пользовательского интерфейса</figcaption>
+              <figcaption class="caseResolvedDisriptionTop">Разработка <br/> криптобиржи: от ядра <br/> до интерфейса</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— реализовали полнофункциональный торговый веб-терминал</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— создали систему управления обеспечением клиентских заявок</figcaption>
               <figcaption class="caseResolvedDisriptionBottom">— обеспечили обработку до 2000 клиентских транзакций в секунду</figcaption>
@@ -190,7 +193,7 @@
                 <li>
                   <figure class="caseOneResolved caseOneResolvedMob">
                     <img class="caseOneResolvedMobImg" src="./img/icon/projects/mail.svg" alt="mail">
-                    <figcaption class="caseResolvedDisriptionTop">Автоматизация обработки клиентских сообщений</figcaption>
+                    <figcaption class="caseResolvedDisriptionTop">Автоматизация <br/> обработки клиентских <br/> сообщений</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— создали систему отчетности по внебиржевым сделкам</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— обеспечили прием и обработку различных клиентских сообщений</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— реализовали формирование выписок и отчетов, а также статистики</figcaption>
@@ -199,7 +202,7 @@
                 <li>
                   <figure class="caseOneResolved caseOneResolvedMob">
                     <img class="caseOneResolvedMobImg" src="./img/icon/projects/study.svg" alt="study">
-                    <figcaption class="caseResolvedDisriptionTop">Организация образовательной платформы</figcaption>
+                    <figcaption class="caseResolvedDisriptionTop">Организация <br/> образовательной <br/> платформы</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— запустили платформу для обучения финансовой грамотности</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— реализовали рабочее пространство для пользователей и преподавателей</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— интегрировали на платформу сервисы финансовой аналитики</figcaption>
@@ -208,7 +211,7 @@
                 <li>
                   <figure class="caseOneResolved caseOneResolvedMob">
                     <img class="caseOneResolvedMobImg" src="./img/icon/projects/crypto.svg" alt="crypto">
-                    <figcaption class="caseResolvedDisriptionTop">Разработка криптобиржи: от ядра до пользовательского интерфейса</figcaption>
+                    <figcaption class="caseResolvedDisriptionTop">Разработка <br/> криптобиржи: от ядра <br/> до интерфейса</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— реализовали полнофункциональный торговый веб-терминал</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— создали систему управления обеспечением клиентских заявок</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— обеспечили обработку до 2000 клиентских транзакций в секунду</figcaption>
@@ -220,7 +223,7 @@
           </div> 
         </section>
 
-        <section id="process">
+        <section class="processSection" id="process">
           <div class="titleSection">Как мы работаем</div>
           <div class="roadMap">
             <div class="roadMapLeft">
@@ -228,21 +231,21 @@
                 <div class="roadMapLeftInfo">
                   <img class="roadMapImg" src="./img/icon/timelime/collect.svg" alt="">
                   <figcaption class="roadMapDiscrTop">Сбор и оформление требований</figcaption>
-                  <figcaption class="roadMapDiscrBottom">Изучаем идею, пишем техническое задание и готовим договор.</figcaption>
+                  <figcaption class="roadMapDiscrBottom">Изучаем идею, пишем техническое задание и готовим договор</figcaption>
                 </div>
               </figure>
               <figure class="roadMapStep">
                 <div class="roadMapLeftInfo">
                   <img src="./img/icon/timelime/test.svg" alt="">
                   <figcaption class="roadMapDiscrTop">Тестирование</figcaption>
-                  <figcaption class="roadMapDiscrBottom">Для полного соответствия ТЗ проводим полный комплекс тестирования для проекта, при необходимости пишем автотесты.</figcaption>
+                  <figcaption class="roadMapDiscrBottom">Для полного соответствия ТЗ проводим полный комплекс тестирования для проекта, при необходимости пишем автотесты</figcaption>
                 </div>
               </figure>
               <figure class="roadMapStep">
                 <div class="roadMapLeftInfo">
                   <img src="./img/icon/timelime/act.svg" alt="">
                   <figcaption class="roadMapDiscrTop">Сдача и приёмка работ</figcaption>
-                  <figcaption class="roadMapDiscrBottom">Проводим демонстрацию готового проекта, подписываем необходимые документы.</figcaption>
+                  <figcaption class="roadMapDiscrBottom">Проводим демонстрацию готового проекта, подписываем необходимые документы</figcaption>
                 </div>
               </figure>
             </div>
@@ -251,21 +254,21 @@
                 <div class="roadMapRightInfo">
                   <img src="./img/icon/timelime/design.svg" alt="">
                   <figcaption class="roadMapDiscrTop">Проектирование и разработка</figcaption>
-                  <figcaption class="roadMapDiscrBottom">Продумываем архитектуру проекта, реализуем серверную и клиентскую часть.</figcaption>
+                  <figcaption class="roadMapDiscrBottom">Продумываем архитектуру проекта, реализуем серверную и клиентскую часть</figcaption>
                 </div>
               </figure>
               <figure class="roadMapStep">
                 <div class="roadMapRightInfo">
                   <img src="./img/icon/timelime/docs.svg" alt="">
                   <figcaption class="roadMapDiscrTop">Составление документации</figcaption>
-                  <figcaption class="roadMapDiscrBottom">Готовим техническую и пользовательскую документацию.</figcaption>
+                  <figcaption class="roadMapDiscrBottom">Готовим техническую и пользовательскую документацию</figcaption>
                 </div>
               </figure>
               <figure class="roadMapStep">
                 <div class="roadMapRightInfo">
                   <img src="./img/icon/timelime/start.svg" alt="">
                   <figcaption class="roadMapDiscrTop">Запуск готового проекта</figcaption>
-                  <figcaption class="roadMapDiscrBottom">Обеспечиваем гарантированную техническую поддержку для уже запущенного проекта.</figcaption>
+                  <figcaption class="roadMapDiscrBottom">Обеспечиваем гарантированную техническую поддержку для уже запущенного проекта</figcaption>
                 </div>
               </figure>
             </div>
@@ -279,7 +282,7 @@
                     <div class="roadMapInfoMob">
                       <img class="roadMapImg" src="./img/icon/timelime/collect.svg" alt="">
                       <figcaption class="roadMapDiscrTop">Сбор и оформление требований</figcaption>
-                      <figcaption class="roadMapDiscrBottom">Изучаем идею, пишем техническое задание и готовим договор.</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Изучаем идею, пишем техническое задание и готовим договор</figcaption>
                     </div>
                   </figure>
                 </li>
@@ -288,7 +291,7 @@
                     <div class="roadMapInfoMob">
                       <img src="./img/icon/timelime/design.svg" alt="">
                       <figcaption class="roadMapDiscrTop">Проектирование и разработка</figcaption>
-                      <figcaption class="roadMapDiscrBottom">Продумываем архитектуру проекта, реализуем серверную и клиентскую часть.</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Продумываем архитектуру проекта, реализуем серверную и клиентскую часть</figcaption>
                     </div>
                   </figure>
                 </li>
@@ -297,7 +300,7 @@
                     <div class="roadMapInfoMob">
                       <img src="./img/icon/timelime/test.svg" alt="">
                       <figcaption class="roadMapDiscrTop">Тестирование</figcaption>
-                      <figcaption class="roadMapDiscrBottom">Для полного соответствия ТЗ проводим полный комплекс тестирования для проекта, при необходимости пишем автотесты.</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Для полного соответствия ТЗ проводим полный комплекс тестирования для проекта, при необходимости пишем автотесты</figcaption>
                     </div>
                   </figure>
                 </li>
@@ -306,7 +309,7 @@
                     <div class="roadMapInfoMob">
                       <img src="./img/icon/timelime/docs.svg" alt="">
                       <figcaption class="roadMapDiscrTop">Составление документации</figcaption>
-                      <figcaption class="roadMapDiscrBottom">Готовим техническую и пользовательскую документацию.</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Готовим техническую и пользовательскую документацию</figcaption>
                     </div>
                   </figure>
                 </li>
@@ -315,7 +318,7 @@
                     <div class="roadMapInfoMob">
                       <img src="./img/icon/timelime/act.svg" alt="">
                       <figcaption class="roadMapDiscrTop">Сдача и приёмка работ</figcaption>
-                      <figcaption class="roadMapDiscrBottom">Проводим демонстрацию готового проекта, подписываем необходимые документы.</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Проводим демонстрацию готового проекта, подписываем необходимые документы</figcaption>
                     </div>
                   </figure>
                 </li>
@@ -324,7 +327,7 @@
                     <div class="roadMapInfoMob">
                       <img src="./img/icon/timelime/start.svg" alt="">
                       <figcaption class="roadMapDiscrTop">Запуск готового проекта</figcaption>
-                      <figcaption class="roadMapDiscrBottom">Обеспечиваем гарантированную техническую поддержку для уже запущенного проекта.</figcaption>
+                      <figcaption class="roadMapDiscrBottom">Обеспечиваем гарантированную техническую поддержку для уже запущенного проекта</figcaption>
                     </div>
                   </figure>
                 </li>
@@ -333,12 +336,28 @@
             <p class="jcarousel-pagination roadMapPagination" data-jcarouselpagination="true"></p>
           </div>
         </section>
+      </main>
+    </div>
         
-        <section id="tim">
+        <section class="timSection" id="tim">
           <div class="titleSection">Наша команда</div>
           <div class="jcarousel-wrapper">
             <div class="jcarousel" data-jcarousel="true">
               <ul>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/SauleKazanbaeva.webp" alt="Saule Kazanbaeva">
+                    <figcaption class="timCarouselDiscrTop">Сауле Казанбаева</figcaption> 
+                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                      <img src="./img/foto/RodionShergin.webp" alt="Rodion Shergin">
+                      <figcaption class="timCarouselDiscrTop">Родион Шергин</figcaption> 
+                      <figcaption class="timCarouselDiscrBottom">Архитектор</figcaption>
+                  </figure>
+                </li>
                 <li> 
                   <figure class="fotoCarousel">
                     <img src="./img/foto/PavelKoryakin.webp" alt="Pavel Koryakin">
@@ -348,7 +367,14 @@
                 </li>
                 <li> 
                   <figure class="fotoCarousel">
-                    <img src="./img/foto/NikitaZolotorev.webp" alt="">
+                    <img src="./img/foto/TatyanaPozdnyakova.webp" alt="Tatyana Pozdnyakova">
+                    <figcaption class="timCarouselDiscrTop">Татьяна Позднякова</figcaption> 
+                    <figcaption class="timCarouselDiscrBottom">Ведущий аналитик</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/NikitaZolotorev.webp" alt="Nikita Zolotorev">
                     <figcaption class="timCarouselDiscrTop">Никита Золоторев</figcaption> 
                     <figcaption class="timCarouselDiscrBottom">Менеджер по работе с клиентами</figcaption>
                   </figure>
@@ -362,23 +388,16 @@
                 </li>
                 <li> 
                   <figure class="fotoCarousel">
-                    <img src="./img/foto/AnnaShergina.webp" alt="Anna Shergina"> 
-                    <figcaption class="timCarouselDiscrTop">Анна Шергина</figcaption>
-                    <figcaption class="timCarouselDiscrBottom">Аналитик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <img src="./img/foto/ElenaSergeychuk.webp" alt="Elena Sergeychuk">
-                    <figcaption class="timCarouselDiscrTop">Елена Сергейчук</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Ведущий тестировщик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
                     <img src="./img/foto/YaroslavErmilov.webp" alt="Yaroslav Ermilov"> 
                     <figcaption class="timCarouselDiscrTop">Ярослав Ермилов</figcaption>
                     <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/AnnaShergina.webp" alt="Anna Shergina"> 
+                    <figcaption class="timCarouselDiscrTop">Анна Шергина</figcaption>
+                    <figcaption class="timCarouselDiscrBottom">Аналитик</figcaption>
                   </figure>
                 </li>
                 <li> 
@@ -390,30 +409,9 @@
                 </li>
                 <li> 
                   <figure class="fotoCarousel">
-                    <img src="./img/foto/RodionShergin.webp" alt="Rodion Shergin">
-                    <figcaption class="timCarouselDiscrTop">Родион Шергин</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Архитектор</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <img src="./img/foto/TatyanaPozdnyakova.webp" alt="Tatyana Pozdnyakova">
-                    <figcaption class="timCarouselDiscrTop">Татьяна Позднякова</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Ведущий аналитик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <img src="./img/foto/EvgeniaPyryeva.webp" alt="Evgenia Pyryeva">
-                    <figcaption class="timCarouselDiscrTop">Евгения Пырьева</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Менеджер проектов</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <img src="./img/foto/AnastasiaKant.webp" alt="Anastasia Kant">
-                    <figcaption class="timCarouselDiscrTop">Анастасия Кант</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Тестровщик</figcaption>
+                    <img src="./img/foto/ElenaSergeychuk.webp" alt="Elena Sergeychuk">
+                    <figcaption class="timCarouselDiscrTop">Елена Сергейчук</figcaption> 
+                    <figcaption class="timCarouselDiscrBottom">Ведущий тестировщик</figcaption>
                   </figure>
                 </li>
                 <li> 
@@ -425,9 +423,23 @@
                 </li>
                 <li> 
                   <figure class="fotoCarousel">
+                    <img src="./img/foto/EvgeniaPyryeva.webp" alt="Evgenia Pyryeva">
+                    <figcaption class="timCarouselDiscrTop">Евгения Пырьева</figcaption> 
+                    <figcaption class="timCarouselDiscrBottom">Менеджер проектов</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
                     <img src="./img/foto/AlexanderBogachev.webp" alt="Alexander Bogachev">
                     <figcaption class="timCarouselDiscrTop">Александр Богачев</figcaption> 
                     <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+                  </figure>
+                </li>
+                <li> 
+                  <figure class="fotoCarousel">
+                    <img src="./img/foto/AnastasiaKant.webp" alt="Anastasia Kant">
+                    <figcaption class="timCarouselDiscrTop">Анастасия Кант</figcaption> 
+                    <figcaption class="timCarouselDiscrBottom">Тестровщик</figcaption>
                   </figure>
                 </li>
                 <li> 
@@ -451,13 +463,6 @@
                     <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
                   </figure>
                 </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <img src="./img/foto/SauleKazanbaeva.webp" alt="Saule Kazanbaeva">
-                    <figcaption class="timCarouselDiscrTop">Сауле Казанбаева</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
-                  </figure>
-                </li>
               </ul>
             </div>
             <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
@@ -466,6 +471,8 @@
           </div>
         </section>
 
+    <div class="page" id="top">
+      <main class="main">
         <section class="sectionFormSend" id="sendForm">
           <div class="titleSection">Оставьте заявку</div>
           <form action="/api/feedback" method="post" name="request" class="formSend sent-request-form">
@@ -512,7 +519,7 @@
       <div class="closeModal closeModalContent"><img class="closeModalIcon" src="./img/icon/other/x.svg" alt=""></div>
       <div class="contentModal">
         <div class="contentModalTitle">Ваша заявка принята!</div>
-        <div class="contentModalSlogon">В ближайшее время с вами свяжется </br> наш сотрудник</div>
+        <div class="contentModalSlogon">С вами свяжется наш сотрудник <br/> для уточнения деталей по заявке. <br/> Вы можете связаться с нами первыми любым из способов: <br/> отправить письмо на sales@itglobal.ru или позвонить по номеру +74957390039</div>
         <img class="contentModalImg" src="./img/foto/modal.webp" alt="Nikita Zolotorev">
         <div class="contentModalName">Никита Золоторев</div>
         <div class="contentModalPosition">менеджер по работе с клиентами</div>
@@ -525,5 +532,7 @@
     <!-- <script src="./js/modal.js"></script> -->
     <script src="./js/hamburgerMenu.js"></script>
     <script src="./js/sendDataForm.js"></script>
+    <!-- <script src="./js/bgrHeadMenu.js"></script> -->
+    <script src="./js/activMenu.js"></script>
   </body>
 </html>

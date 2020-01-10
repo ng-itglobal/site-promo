@@ -8,12 +8,20 @@
           width = carousel.innerWidth();
 
         if (width > 729) {
-          width = width / 3;
+          width = width / 4;
         } else {
           width = width / 1;
         }
 
         carousel.jcarousel("items").css("width", Math.ceil(width) + "px");
+        // carousel.jcarousel("items").css("opacity", "0.25");
+        carousel.jcarousel("fullyvisible").css("opacity", "0.8");
+      })
+      .on("jcarousel:animateend", function(event, carousel) {
+        $(this).jcarousel("items").css("opacity", "0.25");
+        $(this).jcarousel("fullyvisible").css("opacity", "0.8");
+        $(this).jcarousel("last").css("opacity", "0.8");
+        $(this).jcarousel("first").css("opacity", "0.25")
       })
       .jcarousel({
         wrap: "circular"

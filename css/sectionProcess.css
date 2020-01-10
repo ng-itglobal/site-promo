@@ -1,3 +1,6 @@
+.processSection {
+  margin-top: 96px;
+}
 .roadMap {
   display: flex;
   justify-content: center;
@@ -5,10 +8,10 @@
 .roadMapStep {
   margin-left: 0;
   margin-right: 0;
-  padding-top: 48px;
+  padding-top: 32px;
 }
 .roadMapLeft {
-  border-right: 4px solid rgba(255, 255, 255, 0.05);
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
   text-align: right;
 }
 .roadMapLeftInfo {
@@ -24,7 +27,7 @@
   display: block;
   position: relative;
   top: 36px;
-  height: 4px;
+  height: 2px;
   background: rgba(255, 255, 255, 0.05);
   width: 40px;
 }
@@ -33,11 +36,11 @@
   margin: 0;
 }
 .roadMapRight {
-  margin: 150px 0 48px 0;
+  margin: 75px 0 24px 0;
   text-align: left;
 }
 .roadMapDiscrTop {
-  padding-top: 21px;
+  padding-top: 12px;
   padding-bottom: 12px;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;

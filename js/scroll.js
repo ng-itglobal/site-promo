@@ -16,9 +16,9 @@
       if (dest !== undefined && dest !== "") {
         $("html").animate(
           {
-            scrollTop: $(dest).offset().top
+            scrollTop: $(dest).offset().top - ($("header").height() + 30)
           },
-          500 // скорость прокрутки
+          0 // скорость прокрутки
         );
       }
       return false;

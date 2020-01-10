@@ -6,10 +6,18 @@
   justify-content: space-between;
 }
 .head {
-  margin: 30px 20px 0 20px;
+  position: fixed;
+  background-color: rgba(17, 17, 17, 0.95);
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+.wrapHeadFixed {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 15px auto;
+  max-width: 1170px;
 }
 .menu li {
   display: inline;
@@ -22,8 +30,27 @@
   color: white;
   text-decoration: none;
 }
+.menu li a:hover {
+  color: #FFB255;
+}
+.menu li a:active {
+  color: #BC6E11;
+}
+.menu li a.active {
+  color: #BC6E11;
+}
+.description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tagline {
+  margin-top: 310px;
+}
 .taglineFirst {
-  height: 150px;
+  /* height: 150px; */
+  max-width: 570px;
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 4rem;
@@ -32,6 +59,15 @@
 }
 .tagline {
   margin-bottom: 150px;
+}
+.taglineFirstSub {
+  margin: 16px 0 32px 0;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.66);
 }
 .btnRequest {
   width: 240px;
@@ -65,6 +101,7 @@
   z-index: 1;
   cursor: pointer;
   display: none;
+  opacity: 0.5;
 }
 .btnTopIconWrap {
   width: 56px;
@@ -72,6 +109,13 @@
   border-radius: 50%;
   background-color: #f7941d;
   text-align: center;
+}
+.btnTopIconWrap:hover {
+  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+}
+.btnTopIconWrap:active {
+  background: #ce7c1a;
+  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
 }
 .btnTopIcon {
   margin: 20px;
@@ -88,12 +132,23 @@
 .scrollInfo {
   letter-spacing: 2px;
 }
+.scrollInfoLink {
+  color: white;
+  text-decoration: none;
+}
+.scrollInfoLink:hover {
+  color: #FFB255;
+}
 .headMob {
   display: none;
 }
 /* первая страница */
 
-
+@media (max-width: 1024px) {
+  .wrapHeadFixed {
+    max-width: 984px;
+  }
+}
 
 @media (max-width: 768px) {
   .head {
