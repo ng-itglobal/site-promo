@@ -21,7 +21,7 @@
       .on("jcarousel:animateend", function(event, carousel) {
         // $(this).jcarousel("items").css("opacity", "0.25");
         // $(this).jcarousel("fullyvisible").css("opacity", "0.8");
-        // $(this).jcarousel("last").css("opacity", "0.8");
+        // $(this).jcarousel("last").css("opacity", "0.25");
         // $(this).jcarousel("first").css("opacity", "0.25")
       })
       .jcarousel({
