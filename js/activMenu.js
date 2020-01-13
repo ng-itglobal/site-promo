@@ -6,8 +6,8 @@ jQuery(window).scroll(function() {
     var scroll = $(window).scrollTop();
     var id = $(el).attr("id");
     if (scroll > top && scroll < bottom) {
-      $("a.active").removeClass("active");
-      $('a[href="#' + id + '"]').addClass("active");
+      $("a.activeMenu").removeClass("activeMenu");
+      $('a[href="#' + id + '"]').addClass("activeMenu");
     }
   });
 });

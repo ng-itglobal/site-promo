@@ -2,78 +2,11 @@
   margin-top: 96px;
   color: white;
 }
-/* карусель сотрудников */
-/* https://github.com/jsor/jcarousel */
-.jcarousel-wrapper {
-  position: relative;
+.listTim {
+
 }
 .fotoCarousel {
-  max-width: 340px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.timCarouselDiscrTop {
-  margin: 24px 0 7px 0; 
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 28px;
-}
-.timCarouselDiscrBottom {
-  font-weight: normal;
-  font-size: 1.125rem;
-  line-height: 24px;
-  color: #8F959F;
-}
-/** Carousel **/
-
-.jcarousel {
-  position: relative;
-  overflow: hidden;
-}
-.jcarousel ul {
-  margin-left: -211.5px;
-  height: 100%;
-  width: 10000em;
-  position: relative;
-  list-style: none;
-}
-.jcarousel li {
-  height: 100%;
-  float: left;
-}
-.jcarousel img {
-  width: 100%;
-  /* opacity: 0.8; */
-}
-
-/** Carousel Controls **/
-
-.jcarousel-control-prev,
-.jcarousel-control-next {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: #4e443c;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 0 1px #000;
-  font: 24px/27px Arial, sans-serif;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 4px #f0efe7;
-  -moz-box-shadow: 0 0 4px #f0efe7;
-  box-shadow: 0 0 4px #f0efe7;
-}
-.jcarousel-control-prev {
-  left: 0px;
-}
-.jcarousel-control-next {
-  right: 0px;
+  width: 340px;
 }
 .timCrouselPagination {
   display: none;
@@ -90,5 +23,11 @@
   }
   .jcarousel-control-next {
     display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .fotoCarousel {
+    width: 340px;
   }
 }

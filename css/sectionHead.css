@@ -36,7 +36,7 @@
 .menu li a:active {
   color: #BC6E11;
 }
-.menu li a.active {
+.menu li a.activeMenu {
   color: #BC6E11;
 }
 .description {
