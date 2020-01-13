@@ -1,9 +1,18 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /* первая страница */
 .wraperHead {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .head {
   position: fixed;
@@ -13,9 +22,16 @@
   z-index: 10;
 }
 .wrapHeadFixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 15px auto;
   max-width: 1170px;
 }
@@ -41,9 +57,16 @@
 }
 .description {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .tagline {
   margin-top: 310px;
@@ -79,11 +102,13 @@
   cursor: pointer;
 }
 .btnRequest:hover {
-  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+  -webkit-box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+          box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
 }
 .btnRequest:active {
   background: #ce7c1a;
-  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+  -webkit-box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+          box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
 }
 .btnRequestTitle {
   font-family: "Roboto", sans-serif;
@@ -111,18 +136,24 @@
   text-align: center;
 }
 .btnTopIconWrap:hover {
-  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+  -webkit-box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+          box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
 }
 .btnTopIconWrap:active {
   background: #ce7c1a;
-  box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+  -webkit-box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
+          box-shadow: 0px 4px 50px rgba(247, 148, 29, 0.66);
 }
 .btnTopIcon {
   margin: 20px;
 }
 .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 20px;
   opacity: 0.5;
 }

@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /* Кейсы, которые мы решали */
 .caseResolved {
   margin-top: 96px;
@@ -5,9 +7,14 @@
 .caseOllResolved {
   margin-bottom: 85px;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .caseOneResolved {
   margin: 0 ;
@@ -60,7 +67,8 @@
   background: #F79D31;
   color: #fff;
   opacity: 1;
-  box-shadow: 0 0 2px #F0EFE7;
+  -webkit-box-shadow: 0 0 2px #F0EFE7;
+          box-shadow: 0 0 2px #F0EFE7;
 }
 /* Кейсы, которые мы решали */
 
@@ -70,6 +78,8 @@
     display: none;
   }
   .caseOllResolvedMob {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }

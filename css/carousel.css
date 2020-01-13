@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /* карусель сотрудников */
 /* https://github.com/jsor/jcarousel */
 .jcarousel-wrapper {
@@ -5,8 +7,13 @@
 }
 .fotoCarousel {
   max-width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
 }
 .timCarouselDiscrTop {
@@ -57,6 +64,8 @@
   background: #292929;
   color: #787878;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font: 24px/27px Arial, sans-serif;  
   border-radius: 50%;
@@ -67,13 +76,15 @@
   left: -32px;
 }
 .jcarousel-control-prev:hover {
-  box-shadow: 0 0 8px #f0efe7;
+  -webkit-box-shadow: 0 0 8px #f0efe7;
+          box-shadow: 0 0 8px #f0efe7;
 }
 .jcarousel-control-next {
   right: -32px;
 }
 .jcarousel-control-next:hover {
-  box-shadow: 0 0 8px #f0efe7;
+  -webkit-box-shadow: 0 0 8px #f0efe7;
+          box-shadow: 0 0 8px #f0efe7;
 }
 .jcarousel-control-next-img {
   display: block;
@@ -82,5 +93,7 @@
 .jcarousel-control-prev-img {
   display: block;
   margin: 0 auto;
-  transform: rotate(180deg)
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg)
 }

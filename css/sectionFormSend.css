@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 /* форма заявки */
 .sectionFormSend {
   margin-top: 96px;
@@ -12,8 +14,13 @@
   border-radius: 3px;
 }
 .formGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 12px 0 32px 0;
 }
 .formGroup label {
@@ -37,7 +44,8 @@
 .formInputInvalid {
   border: 2px solid #510A0A;
   border-radius: 3px;
-  box-shadow: 0px 4px 50px rgba(255, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 50px rgba(255, 0, 0, 0.25);
+          box-shadow: 0px 4px 50px rgba(255, 0, 0, 0.25);
 }
 .formGroupContact p {
   text-transform: none;
@@ -45,8 +53,13 @@
   line-height: 20px;
 }
 .formGroupContactCheckbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .formGroupContactCheckbox p {
   font-family: "Roboto", sans-serif;
