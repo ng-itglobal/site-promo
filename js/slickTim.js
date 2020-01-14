@@ -19,7 +19,6 @@ $(document).ready(function() {
         settings: {
           arrows: false,
           dots: true,
-          dotsClass: "paginationTim",
           centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1

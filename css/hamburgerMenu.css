@@ -21,6 +21,7 @@
   text-align: center;
 }
 .wrapLinksMobMenu {
+  display: none;
   /* высота шапки */
   margin-top: -82px;
    /* высота шапки */
