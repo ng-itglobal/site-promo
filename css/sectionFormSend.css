@@ -3,7 +3,7 @@
 /* форма заявки */
 .sectionFormSend {
   margin-top: 96px;
-  margin-bottom: 250px;
+  margin-bottom: 366px;
   text-align: left;
 }
 .formSend {
@@ -96,6 +96,7 @@
   color: #f7941d;
 }
 .formGroupText {
+  overflow-y: hidden;
   height: 168px;
 }
 .formGroupLink {

@@ -10,7 +10,6 @@ $(document).ready(function() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: "40px",
           slidesToShow: 3
         }
       },

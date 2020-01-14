@@ -10,7 +10,6 @@
   $(".headMobLink").click(function() {
     $(".containerIconBurger").click();
     $(".headMobLinks").css("display", "none");
-    $(".wrapLinksMobMenu").css("display", "none");
     $(".headMob").css("height", "auto");
   });
 })(jQuery);
