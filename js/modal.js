@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function($) {
   $(".modalBtn").click(function(e) {
     e.preventDefault();
     let id = $(".modal");

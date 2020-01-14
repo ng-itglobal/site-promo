@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function($) {
   var $form = $(".sent-request-form");
 
   function IsValidPhone(phone) {
@@ -141,4 +141,4 @@
 
     e.preventDefault();
   });
-})(jQuery);
+});

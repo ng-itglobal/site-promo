@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function($) {
   $(".containerIconBurger").click(function() {
     if (parseInt($(".headMob").css("height")) === $(window).height()) {
       $(".headMob").css("height", "auto");
