@@ -22,6 +22,8 @@
   z-index: 10;
 }
 .wrapHeadFixed {
+  padding: 0 20px;
+  max-width: 1210px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

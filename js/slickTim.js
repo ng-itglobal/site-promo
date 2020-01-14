@@ -10,7 +10,9 @@ $(document).ready(function() {
         settings: {
           arrows: false,
           centerMode: true,
-          slidesToShow: 1
+          slidesToShow: 1,
+          dots: true,
+          dotsClass: "timDots",
         }
       },
       {
@@ -18,7 +20,9 @@ $(document).ready(function() {
         settings: {
           arrows: false,
           centerMode: true,
-          slidesToShow: 1
+          slidesToShow: 1,
+          dots: true,
+          dotsClass: "timDots",
         }
       }
     ]
