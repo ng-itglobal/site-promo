@@ -80,6 +80,7 @@ img {
   transform: rotate(180deg);
 }
 .timDots {
+  padding-left: 0px;
   display: flex;
   justify-content: center;
 }
