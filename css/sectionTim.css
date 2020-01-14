@@ -1,39 +1,67 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
-
 .timSection {
+  box-sizing: border-box;
   margin-top: 96px;
   color: white;
 }
-.listTim {
+.slick-list {
+ overflow: visible;
+}
 
+.slider {
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+.slick-slide {
+  margin: 0px 37.5px;
+  opacity: 0.25;
 }
 .fotoCarousel {
-  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
 }
-.timCrouselPagination {
-  display: none;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-/* карусель сотрудников */
+
+.slick-active {
+  opacity: 0.8;
+}
+.slick-next {
+ margin-right: 25px;
+  z-index: 2;
+}
+.slick-prev {
+  margin-left: 25px;
+  z-index: 2;
+}
+
+
+.timCarouselDiscrTop {
+  margin: 24px 0 7px 0; 
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 28px;
+}
+.timCarouselDiscrBottom {
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 24px;
+  color: #8F959F;
+}
 
 @media (max-width: 768px) {
-  .timCrouselPagination {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .jcarousel-control-prev {
-    display: none;
-  }
-  .jcarousel-control-next {
-    display: none;
-  }
+
 }
 
 @media (max-width: 360px) {
-  .fotoCarousel {
-    width: 340px;
-  }
+
 }

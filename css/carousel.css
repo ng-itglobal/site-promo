@@ -5,29 +5,7 @@
 .jcarousel-wrapper {
   position: relative;
 }
-.fotoCarousel {
-  max-width: 340px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-}
-.timCarouselDiscrTop {
-  margin: 24px 0 7px 0; 
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 28px;
-}
-.timCarouselDiscrBottom {
-  font-weight: normal;
-  font-size: 1.125rem;
-  line-height: 24px;
-  color: #8F959F;
-}
+
 /** Carousel **/
 
 .jcarousel {

@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="./img/icon/favicon/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" type="text/css" href="./slick-carousel/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-carousel/slick-theme.css"/>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/carousel.css" rel="stylesheet" />
     <link href="./css/sectionHead.css" rel="stylesheet" />
@@ -15,7 +20,8 @@
     <link href="./css/sectionFormSend.css" rel="stylesheet" />
     <link href="./css/sectionProcess.css" rel="stylesheet" />
     <link href="./css/modal.css" rel="stylesheet" />
-    <link href="./css/hamburgerMenu.css" rel="stylesheet" />
+    <link href="./css/hamburgerMenu.css" rel="stylesheet" />    
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jCarousel - v0.3.9.js"></script>
     <script type="text/javascript" src="./js/jquery.jcarousel-swipe.js"></script>
@@ -339,188 +345,181 @@
             </div>
             <p class="jcarousel-pagination roadMapPagination" data-jcarouselpagination="true"></p>
           </div>
-        </section>    
+        </section>
         
         <section class="timSection" id="tim">
           <div class="titleSection">Наша команда</div>
-          <div class="jcarousel-wrapper">
-            <div class="jcarousel" data-jcarousel="true" id="jcarouselTim">
-              <ul class="listTim">
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/SauleKazanbaeva.webp">
-                      <img src="./img/foto/SauleKazanbaeva.png" alt="Saule Kazanbaeva">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Сауле Казанбаева</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/RodionShergin.webp">
-                      <img src="./img/foto/RodionShergin.png" alt="Rodion Shergin">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Родион Шергин</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Архитектор</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/PavelKoryakin.webp">
-                      <img src="./img/foto/PavelKoryakin.png" alt="Pavel Koryakin">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Павел Корякин</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Генеральный директор</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/TatyanaPozdnyakova.webp">
-                      <img src="./img/foto/TatyanaPozdnyakova.png" alt="Tatyana Pozdnyakova">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Татьяна Позднякова</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Ведущий аналитик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/NikitaZolotorev.webp">
-                      <img src="./img/foto/NikitaZolotorev.png" alt="Nikita Zolotorev">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Никита Золоторев</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Менеджер по работе с клиентами</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/SvetlanaTribunskaya.webp">
-                        <img src="./img/foto/SvetlanaTribunskaya.png" alt="Svetlana Tribunskaya">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Светлана Трибунская</figcaption>
-                    <figcaption class="timCarouselDiscrBottom">Офис-менеджер</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/YaroslavErmilov.webp">
-                      <img src="./img/foto/YaroslavErmilov.png" alt="Yaroslav Ermilov"> 
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Ярослав Ермилов</figcaption>
-                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/AnnaShergina.webp">
-                      <img src="./img/foto/AnnaShergina.png" alt="Anna Shergina"> 
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Анна Шергина</figcaption>
-                    <figcaption class="timCarouselDiscrBottom">Аналитик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/AlbertCaptains.webp">
-                      <img src="./img/foto/AlbertCaptains.png" alt="Albert Captains">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Альберт Капитанов</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Архитектор</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/ElenaSergeychuk.webp">
-                      <img src="./img/foto/ElenaSergeychuk.png" alt="Elena Sergeychuk">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Елена Сергейчук</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Ведущий тестировщик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/VictorPozdnyakov.webp">
-                      <img src="./img/foto/VictorPozdnyakov.png" alt="Victor Pozdnyakov">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Виктор Поздняков</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/EvgeniaPyryeva.webp">
-                      <img src="./img/foto/EvgeniaPyryeva.png" alt="Evgenia Pyryeva">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Евгения Пырьева</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Менеджер проектов</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/AlexanderBogachev.webp">
-                      <img src="./img/foto/AlexanderBogachev.png" alt="Alexander Bogachev">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Александр Богачев</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/AnastasiaKant.webp">
-                      <img src="./img/foto/AnastasiaKant.png" alt="Anastasia Kant">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Анастасия Кант</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Тестровщик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/EvgenyMalygin.webp">
-                      <img src="./img/foto/EvgenyMalygin.png" alt="Evgeny Malygin">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Евгений Малыгин</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Сотрудник техподдержки</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/AndreyErmolov.webp">
-                      <img src="./img/foto/AndreyErmolov.png" alt="Andrey Ermolov">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Андрей Ермолов</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
-                  </figure>
-                </li>
-                <li> 
-                  <figure class="fotoCarousel">
-                    <picture>
-                      <source srcset="./img/foto/FedorAverin.webp">
-                      <img src="./img/foto/FedorAverin.png" alt="Fedor Averin">
-                    </picture>
-                    <figcaption class="timCarouselDiscrTop">Федор Аверин</figcaption> 
-                    <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
-                  </figure>
-                </li>
-              </ul>
+          <div class="center slider"> 
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/PavelKoryakin.webp">
+                  <img src="./img/foto/PavelKoryakin.png" alt="Pavel Koryakin">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Павел Корякин</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Генеральный директор</figcaption>
+              </figure>
             </div>
-            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true"><img class="jcarousel-control-prev-img" src="./img/icon/other/chevron.svg" alt="arrow"></a>
-            <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true"><img class="jcarousel-control-next-img" src="./img/icon/other/chevron.svg" alt="arrow"></a>
-            <p class="jcarousel-pagination timCrouselPagination" data-jcarouselpagination="true"></p>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/TatyanaPozdnyakova.webp">
+                  <img src="./img/foto/TatyanaPozdnyakova.png" alt="Tatyana Pozdnyakova">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Татьяна Позднякова</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Ведущий аналитик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/NikitaZolotorev.webp">
+                  <img src="./img/foto/NikitaZolotorev.png" alt="Nikita Zolotorev">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Никита Золоторев</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Менеджер по работе с клиентами</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/SvetlanaTribunskaya.webp">
+                    <img src="./img/foto/SvetlanaTribunskaya.png" alt="Svetlana Tribunskaya">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Светлана Трибунская</figcaption>
+                <figcaption class="timCarouselDiscrBottom">Офис-менеджер</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/YaroslavErmilov.webp">
+                  <img src="./img/foto/YaroslavErmilov.png" alt="Yaroslav Ermilov"> 
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Ярослав Ермилов</figcaption>
+                <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/AnnaShergina.webp">
+                  <img src="./img/foto/AnnaShergina.png" alt="Anna Shergina"> 
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Анна Шергина</figcaption>
+                <figcaption class="timCarouselDiscrBottom">Аналитик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/AlbertCaptains.webp">
+                  <img src="./img/foto/AlbertCaptains.png" alt="Albert Captains">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Альберт Капитанов</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Архитектор</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/ElenaSergeychuk.webp">
+                  <img src="./img/foto/ElenaSergeychuk.png" alt="Elena Sergeychuk">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Елена Сергейчук</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Ведущий тестировщик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/VictorPozdnyakov.webp">
+                  <img src="./img/foto/VictorPozdnyakov.png" alt="Victor Pozdnyakov">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Виктор Поздняков</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/EvgeniaPyryeva.webp">
+                  <img src="./img/foto/EvgeniaPyryeva.png" alt="Evgenia Pyryeva">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Евгения Пырьева</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Менеджер проектов</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/AlexanderBogachev.webp">
+                  <img src="./img/foto/AlexanderBogachev.png" alt="Alexander Bogachev">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Александр Богачев</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/AnastasiaKant.webp">
+                  <img src="./img/foto/AnastasiaKant.png" alt="Anastasia Kant">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Анастасия Кант</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Тестровщик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/EvgenyMalygin.webp">
+                  <img src="./img/foto/EvgenyMalygin.png" alt="Evgeny Malygin">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Евгений Малыгин</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Сотрудник техподдержки</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/AndreyErmolov.webp">
+                  <img src="./img/foto/AndreyErmolov.png" alt="Andrey Ermolov">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Андрей Ермолов</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/FedorAverin.webp">
+                  <img src="./img/foto/FedorAverin.png" alt="Fedor Averin">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Федор Аверин</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/SauleKazanbaeva.webp">
+                  <img src="./img/foto/SauleKazanbaeva.png" alt="Saule Kazanbaeva">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Сауле Казанбаева</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Разработчик</figcaption>
+              </figure>
+            </div>
+            <div class="cardTim"> 
+              <figure class="fotoCarousel">
+                <picture>
+                  <source srcset="./img/foto/RodionShergin.webp">
+                  <img src="./img/foto/RodionShergin.png" alt="Rodion Shergin">
+                </picture>
+                <figcaption class="timCarouselDiscrTop">Родион Шергин</figcaption> 
+                <figcaption class="timCarouselDiscrBottom">Архитектор</figcaption>
+              </figure>
+            </div>
           </div>
         </section>
       
@@ -585,6 +584,11 @@
     <script src="./js/sendDataForm.js"></script>
     <!-- <script src="./js/bgrHeadMenu.js"></script> -->
     <script src="./js/activMenu.js"></script>
-    <script src="./js/carouselTim.js"></script>
+    <!-- <script src="./js/carouselTim.js"></script> -->
+
+
+    <script src="./slick-carousel/slick.min.js"></script>
+    <script src="./js/slickTim.js"></script>
+
   </body>
 </html>

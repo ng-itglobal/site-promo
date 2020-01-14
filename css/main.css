@@ -5,7 +5,8 @@ body {
   background-size: cover;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;  
+  overflow-x: hidden;
 }
 figure {
   margin: 0;
@@ -18,7 +19,6 @@ figure {
   max-width: 1210px;
   color: white;
 }
-
 
 @media (max-width: 320px) {
 
