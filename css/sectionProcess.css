@@ -91,6 +91,7 @@
   }
   .roadMapInfoMob img {
     max-width: 96px;
+    margin: 0 auto;
   }
   .roadMapPagination {
     display: -webkit-box;

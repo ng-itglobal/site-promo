@@ -88,8 +88,6 @@
     display: none;
   }
   .caseOllWebMob {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }

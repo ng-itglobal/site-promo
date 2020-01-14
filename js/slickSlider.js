@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".center").slick({
+  $(".timSlider").slick({
     centerMode: true,
     infinite: true,
     slidesToShow: 3,
@@ -27,4 +27,32 @@ $(document).ready(function() {
       }
     ]
   });
+
+  $(".roadMapMobSlider").slick({
+    centerMode: false,
+    infinite: true,
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    dotsClass: "timDots",
+  });
+
+  $(".caseOllResolvedSlider").slick({
+    centerMode: false,
+    infinite: true,
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    dotsClass: "timDots",
+  });
+
+  $(".caseOllWebMobSlider").slick({
+    centerMode: false,
+    infinite: true,
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    dotsClass: "timDots",
+  });
+
 });

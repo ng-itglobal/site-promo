@@ -28,7 +28,7 @@ img {
 }
 .slick-active {
   transition: 0.5s;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .slick-next {
