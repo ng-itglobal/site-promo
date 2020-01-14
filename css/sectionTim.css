@@ -4,7 +4,7 @@
   color: white;
 }
 .cardTim {
-  height: auto;
+  /* height: auto; */
 }
 .slick-list {
   overflow: visible;
@@ -14,13 +14,12 @@
   margin: 0 auto;
 }
 .slick-slide {
+  transition: 0.5s;
   margin: 0px 37.5px;
   opacity: 0.25;
 }
 .fotoCarousel {
   height: auto;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
 }
 img {
@@ -28,6 +27,7 @@ img {
   height: auto;
 }
 .slick-active {
+  transition: 0.5s;
   opacity: 0.8;
 }
 
@@ -51,12 +51,14 @@ img {
 }
 .slick-next:after {
   content: " ";
+  background: #292929;
   background-image: url("../img/icon/other/arrow.png");
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .slick-prev {
@@ -71,13 +73,16 @@ img {
 }
 .slick-prev:after {
   content: " ";
+  background: #292929;
   background-image: url("../img/icon/other/arrow.png");
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   transform: rotate(180deg);
+  z-index: 2;
 }
 .timDots {
   padding-left: 0px;

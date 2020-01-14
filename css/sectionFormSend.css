@@ -84,7 +84,7 @@
   display: inline-block;
   outline: none;
 }
-.ContactCheckbox:checked::before {
+.ContactCheckbox:checked::after {
   height: 24px;
   width: 24px;
   position: absolute;
@@ -109,7 +109,7 @@
 
 @media (max-width: 768px) {
   .formSend {
-    padding: 50px 70px;                                           
+    padding: 30px 30px;                                           
   }
   .formInput {
     width: 90%;
