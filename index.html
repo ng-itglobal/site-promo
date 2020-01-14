@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 
     <link href="./css/main.css" rel="stylesheet" />
-    <link href="./css/carousel.css" rel="stylesheet" />
     <link href="./css/sectionHead.css" rel="stylesheet" />
     <link href="./css/sectionWebApp.css" rel="stylesheet" />
     <link href="./css/sectionCaseResolved.css" rel="stylesheet" />
@@ -23,8 +22,6 @@
     <link href="./css/hamburgerMenu.css" rel="stylesheet" />    
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/jCarousel - v0.3.9.js"></script>
-    <script type="text/javascript" src="./js/jquery.jcarousel-swipe.js"></script>
     <title>Разработка web-приложений</title>
   </head>
   <body>
@@ -190,46 +187,12 @@
               </figure>
             </div> 
 
+            <!-- jcarousel -->
 
-            <div class="caseOllResolved caseOllResolvedMob jcarousel-wrapper">
-              <div class="jcarousel" data-jcarousel="true">
-                <ul class="caseOllResolvedMobList">
-                  <li>
-                    <figure class="caseOneResolved caseOneResolvedMob">
-                      <img class="caseOneResolvedMobImg" src="./img/icon/projects/mail.svg" alt="mail">
-                      <figcaption class="caseResolvedDisriptionTop">Автоматизация <br/> обработки клиентских <br/> сообщений</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— создали систему отчетности по внебиржевым сделкам</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— обеспечили прием и обработку различных клиентских сообщений</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— реализовали формирование выписок и отчетов, а также статистики</figcaption>
-                    </figure>
-                  </li>
-                  <li>
-                    <figure class="caseOneResolved caseOneResolvedMob">
-                      <img class="caseOneResolvedMobImg" src="./img/icon/projects/study.svg" alt="study">
-                      <figcaption class="caseResolvedDisriptionTop">Организация <br/> образовательной <br/> платформы</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— запустили платформу для обучения финансовой грамотности</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— реализовали рабочее пространство для пользователей и преподавателей</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— интегрировали на платформу сервисы финансовой аналитики</figcaption>
-                    </figure>
-                  </li>
-                  <li>
-                    <figure class="caseOneResolved caseOneResolvedMob">
-                      <img class="caseOneResolvedMobImg" src="./img/icon/projects/crypto.svg" alt="crypto">
-                      <figcaption class="caseResolvedDisriptionTop">Разработка <br/> криптобиржи: от ядра <br/> до интерфейса</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— реализовали полнофункциональный торговый веб-терминал</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— создали систему управления обеспечением клиентских заявок</figcaption>
-                      <figcaption class="caseResolvedDisriptionBottom">— обеспечили обработку до 2000 клиентских транзакций в секунду</figcaption>
-                    </figure>
-                  </li>
-                </ul>
-              </div>
-              <p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
-            </div> 
-
-            <!-- <div class="caseOllResolvedSlider caseOllResolvedMob slider">
+            <div class="caseOllResolvedSlider caseOllResolvedMob ">
 
                 <div>
-                  <figure class="">
+                  <figure class="caseOneResolved caseOneResolvedMob">
                     <img src="./img/icon/projects/mail.svg" alt="mail">
                     <figcaption class="caseResolvedDisriptionTop">Автоматизация <br/> обработки клиентских <br/> сообщений</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— создали систему отчетности по внебиржевым сделкам</figcaption>
@@ -238,7 +201,7 @@
                   </figure>
                 </div>
                 <div>
-                  <figure class="">
+                  <figure class="caseOneResolved caseOneResolvedMob">
                     <img class="caseOneResolvedMobImg" src="./img/icon/projects/study.svg" alt="study">
                     <figcaption class="caseResolvedDisriptionTop">Организация <br/> образовательной <br/> платформы</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— запустили платформу для обучения финансовой грамотности</figcaption>
@@ -247,7 +210,7 @@
                   </figure>
                 </div>
                 <div>
-                  <figure class="">
+                  <figure class="caseOneResolved caseOneResolvedMob">
                     <img class="caseOneResolvedMobImg" src="./img/icon/projects/crypto.svg" alt="crypto">
                     <figcaption class="caseResolvedDisriptionTop">Разработка <br/> криптобиржи: от ядра <br/> до интерфейса</figcaption>
                     <figcaption class="caseResolvedDisriptionBottom">— реализовали полнофункциональный торговый веб-терминал</figcaption>
@@ -257,7 +220,7 @@
                 </div>
 
               
-            </div> -->
+            </div>
 
 
           </section>
@@ -625,14 +588,13 @@
         </div>
       </div>
 
-      <script src="./js/carousel.js"></script>
+
       <script src="./js/scroll.js"></script>
       <!-- <script src="./js/modal.js"></script> -->
       <script src="./js/hamburgerMenu.js"></script>
       <script src="./js/sendDataForm.js"></script>
       <!-- <script src="./js/bgrHeadMenu.js"></script> -->
       <script src="./js/activMenu.js"></script>
-      <!-- <script src="./js/carouselTim.js"></script> -->
 
 
       <script src="./slick-carousel/slick.min.js"></script>
