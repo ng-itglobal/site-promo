@@ -11,6 +11,7 @@
   justify-content: center;
 }
 .caseOneResolved {
+  box-sizing: border-box;
   margin: 0 ;
   margin-bottom: 20px;
   width: 310px;
@@ -60,7 +61,26 @@
   }
   .caseOneResolvedMob {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
+  }
+  .caseResolvedDisriptionTop {
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
+  .caseResolvedDisriptionBottom {
+    font-size: 0.875rem;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .caseResolvedDisriptionTop {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .caseResolvedDisriptionBottom {
+    font-size: 1.125rem;
+    line-height: 28px;
   }
 }
 
@@ -72,6 +92,6 @@
 
 @media (max-width: 360px) {
   .caseOneResolvedMob {
-
+ 
   }
 }

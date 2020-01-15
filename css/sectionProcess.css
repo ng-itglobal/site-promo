@@ -14,7 +14,6 @@
 .roadMapStep {
   margin-left: 0;
   margin-right: 0;
-  padding-top: 32px;
 }
 .roadMapLeft {
   border-right: 2px solid rgba(255, 255, 255, 0.05);
@@ -101,5 +100,23 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  
+  .roadMapDiscrTop {
+    font-size: 1.125rem;
+    line-height: 24px;  
+  }
+  .roadMapDiscrBottom {
+    font-size: 	0.875rem;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .roadMapDiscrTop {
+    font-size: 2rem;
+    line-height: 37px;
+  }
+  .roadMapDiscrBottom {
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
 }

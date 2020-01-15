@@ -27,4 +27,4 @@ $(document).ready(function($) {
     $(".topnavHeadMenuIconClose").css("display", "none");
     $(".topnavHeadMenuIconOpen").css("display", "block");
   });
-})(jQuery);
+});
