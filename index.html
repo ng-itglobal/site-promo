@@ -529,17 +529,17 @@
 
               <div class="formGroup">
                 <label for="name">ваше имя</label>
-                <input id="sentRequestName" name="name" type="text" class="formInput form-control" placeholder="Как к вам обращаться?" autocomplete="off">
+                <input id="sentRequestName" name="name" type="text" class="formInput form-control" placeholder="Как к вам обращаться?" autocomplete="off" pattern="[A-Z]|\[a-z]">
               </div>
 
               <div class="formGroup">
                 <label for="mail">email</label>
-                <input id="sentRequestEmail" name="mail" type="email" class="formInput" placeholder="Укажите вашу почту" autocomplete="off">
+                <input id="sentRequestEmail" name="mail" type="email" class="formInput" placeholder="Укажите вашу почту" autocomplete="off" pattern=`${/^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i}`>
               </div>
 
               <div class="formGroup">
                 <label for="phone">телефон</label>
-                <input id="sentRequestPhone" name="phone" type="tel" class="formInput" placeholder="+79998888888..." autocomplete="off">
+                <input id="sentRequestPhone" name="phone" type="tel" class="formInput" placeholder="+79998888888..." autocomplete="off" pattern="((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}">
               </div>
 
               <div class="formGroup formGroupContact">

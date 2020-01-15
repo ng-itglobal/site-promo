@@ -42,6 +42,12 @@
   border: none;
   border-radius: 3px;
 }
+.formInput:invalid {
+  border: 2px solid #510A0A;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 4px 50px rgba(255, 0, 0, 0.25);
+          box-shadow: 0px 4px 50px rgba(255, 0, 0, 0.25);
+}
 .formInputInvalid {
   border: 2px solid #510A0A;
   border-radius: 3px;
